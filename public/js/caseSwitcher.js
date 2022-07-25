@@ -15,3 +15,15 @@ function louder(b) {
 }
 
 
+document.getElementById('sarc-btn').addEventListener('click', louder)
+/*function sarc (s) {
+    let str = s.toLowerCase().split("");
+    for(let i=0; i<str.length; i+=2) {
+        str[i] = str[i].toUpperCase();
+}
+
+return str.join ("");
+
+   }
+
+/*   console.log(sarc("Yahye Gutale"));
