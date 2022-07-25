@@ -1,4 +1,4 @@
-document.getElementById('quite-btn').addEventListener('click', makeQuiet)
+document.getElementById('quiet-btn').addEventListener('click', makeQuiet)
 function makeQuiet(a) {
     console.log(a)
     const p = document.getElementById('patrick')
@@ -13,5 +13,3 @@ function louder(b) {
     let text = c.innerText
     c.innerText = text.toUpperCase()
 }
-
-//
