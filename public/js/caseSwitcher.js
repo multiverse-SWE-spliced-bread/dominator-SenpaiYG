@@ -1,6 +1,6 @@
 document.getElementById('quiet-btn').addEventListener('click', makeQuiet)
 function makeQuiet(a) {
-    console.log(a)
+    //console.log(a)
     const p = document.getElementById('patrick')
     let text = p.innerText
     p.innerText = text.toLowerCase()
@@ -8,7 +8,7 @@ function makeQuiet(a) {
 
 document.getElementById('loud-btn').addEventListener('click', louder)
 function louder(b) {
-    console.log(b)
+    //console.log(b)
     const c = document.getElementById('patrick')
     let text = c.innerText
     c.innerText = text.toUpperCase()
@@ -16,7 +16,6 @@ function louder(b) {
 
 document.getElementById('sarc-btn').addEventListener('click', makeSarc)
 function makeSarc (e) {
-    console.log(e)
     const p = document.getElementById('patrick')
     const text = p.innerText
     let result = '';
@@ -29,6 +28,7 @@ function makeSarc (e) {
             i++
         }
         result += char
-        p.innerText = result
+        
     }
+    p.innerText = result
 }
