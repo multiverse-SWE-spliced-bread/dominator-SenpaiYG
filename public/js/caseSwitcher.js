@@ -22,13 +22,12 @@ function makeSarc (e) {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'
     let i = 0
     for (let char of text) {
-        if (alphabet.includes(char)) {
+        if (alphabet.includes(char.toLowerCase())) {
             if (i % 2 === 0) char = char.toLowerCase()
             if (i % 2 === 1) char = char.toUpperCase()
             i++
         }
         result += char
-        
     }
     p.innerText = result
 }
