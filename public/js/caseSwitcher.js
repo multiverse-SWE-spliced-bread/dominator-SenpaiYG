@@ -29,5 +29,6 @@ function makeSarc (e) {
             i++
         }
         result += char
+        p.innerText = result
     }
 }
