@@ -13,3 +13,21 @@ function louder(b) {
     let text = c.innerText
     c.innerText = text.toUpperCase()
 }
+
+document.getElementById('sarc-btn').addEventListener('click', makeSarc)
+function makeSarc (e) {
+    console.log(e)
+    const p = document.getElementById('patrick')
+    const text = p.innerText
+    let result = '';
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    let i = 0
+    for (let char of text) {
+        if (alphabet.includes(char)) {
+            if (i % 2 === 0) char = char.toLowerCase()
+            if (i % 2 === 1) char = char.toUpperCase()
+            i++
+        }
+        result += char
+    }
+}
